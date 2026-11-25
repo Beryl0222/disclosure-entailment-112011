@@ -1,0 +1,932 @@
+{
+  "claims": [
+    {
+      "claim_id": "C001",
+      "site": "南站",
+      "actor": "A",
+      "industry": "装配",
+      "practice": "回用",
+      "years": [
+        2024,
+        2025
+      ],
+      "role": "implemented",
+      "status": "site_verified",
+      "project": "南站-回用",
+      "segments": [
+        {
+          "seg_id": "T1-1-1",
+          "text": "本园区着力提高回用水比率，"
+        },
+        {
+          "seg_id": "T1-2-1",
+          "text": "南站将装配线废水用于供冷补水，"
+        },
+        {
+          "seg_id": "T10-1-2",
+          "text": "仍未建成回用设施。"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "T1",
+          "seg_id": "T1-1-1",
+          "quote": "本园区着力提高回用水比率，",
+          "kind": "disclosure"
+        },
+        {
+          "source_id": "T1",
+          "seg_id": "T1-2-1",
+          "quote": "南站将装配线废水用于供冷补水，",
+          "kind": "disclosure"
+        },
+        {
+          "source_id": "T10",
+          "seg_id": "T10-1-2",
+          "quote": "仍未建成回用设施。",
+          "kind": "disclosure"
+        },
+        {
+          "source_id": "T7",
+          "seg_id": "T7-1-1",
+          "quote": "北站不是青瓦的南站。",
+          "kind": "interview"
+        }
+      ],
+      "source_links": [
+        {
+          "link_id": "L001",
+          "kind": "template_reuse",
+          "status": "confirmed",
+          "basis": "与范文 T6 原文一致",
+          "left": "T6-1-1",
+          "right": "T1-1-1",
+          "evidence": [
+            "T6"
+          ],
+          "slots": []
+        },
+        {
+          "link_id": "L003",
+          "kind": "same_project",
+          "status": "confirmed",
+          "basis": "同一场址（南站）对同一项目（南站）的多篇发稿，行动只计一次",
+          "left": "T1-2-1",
+          "right": "T3-1-2",
+          "evidence": [],
+          "slots": [
+            "将=>∅",
+            "补水=>循环"
+          ]
+        },
+        {
+          "link_id": "L009",
+          "kind": "shared_terms",
+          "status": "refuted",
+          "basis": "采访 T7 否定同一项目，分属两座厂",
+          "left": "T1-2-1",
+          "right": "T2-2-1",
+          "evidence": [
+            "T7"
+          ],
+          "slots": [
+            "南=>北",
+            "将装配=>自建的一",
+            "用于=>回到",
+            "补水=>设备"
+          ]
+        },
+        {
+          "link_id": "L009T",
+          "kind": "text_only_reuse",
+          "status": "confirmed",
+          "basis": "采访 T7 确认计划文本被照着写，两处行动各自独立",
+          "left": "T1-2-1",
+          "right": "T2-2-1",
+          "evidence": [
+            "T7"
+          ],
+          "slots": [
+            "南=>北",
+            "将装配=>自建的一",
+            "用于=>回到",
+            "补水=>设备"
+          ]
+        }
+      ],
+      "note": "采访 T7 否定与他场同项目，本场候选保留独立身份"
+    },
+    {
+      "claim_id": "C002",
+      "site": "南站",
+      "actor": "A",
+      "industry": "装配",
+      "practice": "巡检",
+      "years": [
+        2025
+      ],
+      "role": "commitment",
+      "status": "text_claimed",
+      "project": "南站-巡检",
+      "segments": [
+        {
+          "seg_id": "T1-1-2",
+          "text": "原则上每年进行用水巡检。"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "T1",
+          "seg_id": "T1-1-2",
+          "quote": "原则上每年进行用水巡检。",
+          "kind": "disclosure"
+        }
+      ],
+      "source_links": [
+        {
+          "link_id": "L002",
+          "kind": "template_reuse",
+          "status": "confirmed",
+          "basis": "与范文 T6 原文一致",
+          "left": "T6-1-2",
+          "right": "T1-1-2",
+          "evidence": [
+            "T6"
+          ],
+          "slots": []
+        }
+      ],
+      "note": ""
+    },
+    {
+      "claim_id": "C003",
+      "site": "北站",
+      "actor": "B",
+      "industry": "装配",
+      "practice": "回用",
+      "years": [
+        2025
+      ],
+      "role": "implemented",
+      "status": "interview_verified",
+      "project": "北站-回用",
+      "segments": [
+        {
+          "seg_id": "T2-1-1",
+          "text": "为提高循环用水占比，"
+        },
+        {
+          "seg_id": "T2-2-1",
+          "text": "北站自建的一线废水回到供冷设备，"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "T2",
+          "seg_id": "T2-1-1",
+          "quote": "为提高循环用水占比，",
+          "kind": "disclosure"
+        },
+        {
+          "source_id": "T2",
+          "seg_id": "T2-2-1",
+          "quote": "北站自建的一线废水回到供冷设备，",
+          "kind": "disclosure"
+        },
+        {
+          "source_id": "T7",
+          "seg_id": "T7-1-1",
+          "quote": "北站不是青瓦的南站。",
+          "kind": "interview"
+        },
+        {
+          "source_id": "T7",
+          "seg_id": "T7-2-1",
+          "quote": "北站试运使用的是独立采购的换热器。",
+          "kind": "interview"
+        }
+      ],
+      "source_links": [
+        {
+          "link_id": "L009",
+          "kind": "shared_terms",
+          "status": "refuted",
+          "basis": "采访 T7 否定同一项目，分属两座厂",
+          "left": "T1-2-1",
+          "right": "T2-2-1",
+          "evidence": [
+            "T7"
+          ],
+          "slots": [
+            "南=>北",
+            "将装配=>自建的一",
+            "用于=>回到",
+            "补水=>设备"
+          ]
+        },
+        {
+          "link_id": "L009T",
+          "kind": "text_only_reuse",
+          "status": "confirmed",
+          "basis": "采访 T7 确认计划文本被照着写，两处行动各自独立",
+          "left": "T1-2-1",
+          "right": "T2-2-1",
+          "evidence": [
+            "T7"
+          ],
+          "slots": [
+            "南=>北",
+            "将装配=>自建的一",
+            "用于=>回到",
+            "补水=>设备"
+          ]
+        },
+        {
+          "link_id": "L010",
+          "kind": "shared_terms",
+          "status": "refuted",
+          "basis": "采访 T7 否定同一项目，分属两座厂",
+          "left": "T2-2-1",
+          "right": "T3-1-2",
+          "evidence": [
+            "T7"
+          ],
+          "slots": [
+            "北=>南",
+            "自建的一=>装配",
+            "回到=>用于",
+            "设备=>循环"
+          ]
+        },
+        {
+          "link_id": "L010T",
+          "kind": "text_only_reuse",
+          "status": "confirmed",
+          "basis": "采访 T7 确认计划文本被照着写，两处行动各自独立",
+          "left": "T2-2-1",
+          "right": "T3-1-2",
+          "evidence": [
+            "T7"
+          ],
+          "slots": [
+            "北=>南",
+            "自建的一=>装配",
+            "回到=>用于",
+            "设备=>循环"
+          ]
+        }
+      ],
+      "note": "采访 T7 明确核实本场 回用 动作；与他场的同项目假设已被采访否定"
+    },
+    {
+      "claim_id": "C004",
+      "site": "北站",
+      "actor": "B",
+      "industry": "装配",
+      "practice": "巡检",
+      "years": [
+        2025
+      ],
+      "role": "commitment",
+      "status": "text_claimed",
+      "project": "北站-巡检",
+      "segments": [
+        {
+          "seg_id": "T2-1-2",
+          "text": "园区原则上逐年巡检。"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "T2",
+          "seg_id": "T2-1-2",
+          "quote": "园区原则上逐年巡检。",
+          "kind": "disclosure"
+        }
+      ],
+      "source_links": [
+        {
+          "link_id": "L004",
+          "kind": "template_reuse",
+          "status": "proposed",
+          "basis": "疑似改写范文 T6，槽位：园区=>∅、逐=>每、∅=>进行用水",
+          "left": "T6-1-2",
+          "right": "T2-1-2",
+          "evidence": [
+            "T6"
+          ],
+          "slots": [
+            "园区=>∅",
+            "逐=>每",
+            "∅=>进行用水"
+          ]
+        }
+      ],
+      "note": ""
+    },
+    {
+      "claim_id": "C005",
+      "site": "西站",
+      "actor": "C",
+      "industry": "材料",
+      "practice": "回用",
+      "years": [
+        2024
+      ],
+      "role": "referenced_peer",
+      "status": "source_pending",
+      "project": "西站-青瓦",
+      "segments": [
+        {
+          "seg_id": "T4-1-1",
+          "text": "借鉴青瓦项目。"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "T4",
+          "seg_id": "T4-1-1",
+          "quote": "借鉴青瓦项目。",
+          "kind": "disclosure"
+        }
+      ],
+      "source_links": [
+        {
+          "link_id": "L005",
+          "kind": "citation",
+          "status": "proposed",
+          "basis": "文字明确引用/参照他方做法，引用内容不计为本场行动",
+          "left": "T3-2-1",
+          "right": "T4-1-1",
+          "evidence": [],
+          "slots": [
+            "集团试点代号=>借鉴",
+            "∅=>项目"
+          ]
+        }
+      ],
+      "note": "存在未证实同源关系，两种解释见来源图 alternatives"
+    },
+    {
+      "claim_id": "C006",
+      "site": "西站",
+      "actor": "C",
+      "industry": "材料",
+      "practice": "回用",
+      "years": [
+        2024
+      ],
+      "role": "negated",
+      "status": "text_claimed",
+      "project": "西站-回用",
+      "segments": [
+        {
+          "seg_id": "T4-2-2",
+          "text": "还未启动回用。"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "T4",
+          "seg_id": "T4-2-2",
+          "quote": "还未启动回用。",
+          "kind": "disclosure"
+        }
+      ],
+      "source_links": [],
+      "note": ""
+    },
+    {
+      "claim_id": "C007",
+      "site": "西站",
+      "actor": "C",
+      "industry": "材料",
+      "practice": "巡检",
+      "years": [
+        2024
+      ],
+      "role": "commitment",
+      "status": "text_claimed",
+      "project": "西站-巡检",
+      "segments": [
+        {
+          "seg_id": "T4-3-1",
+          "text": "巡检承诺参照园区要求。"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "T4",
+          "seg_id": "T4-3-1",
+          "quote": "巡检承诺参照园区要求。",
+          "kind": "disclosure"
+        }
+      ],
+      "source_links": [],
+      "note": ""
+    },
+    {
+      "claim_id": "C008",
+      "site": "汀湾",
+      "actor": "D",
+      "industry": "材料",
+      "practice": "回用",
+      "years": [
+        2025
+      ],
+      "role": "intent",
+      "status": "text_claimed",
+      "project": "汀湾-计量表",
+      "segments": [
+        {
+          "seg_id": "T5-1-1",
+          "text": "我们拟加装用水计量表，"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "T5",
+          "seg_id": "T5-1-1",
+          "quote": "我们拟加装用水计量表，",
+          "kind": "disclosure"
+        }
+      ],
+      "source_links": [],
+      "note": ""
+    },
+    {
+      "claim_id": "C009",
+      "site": "汀湾",
+      "actor": "D",
+      "industry": "材料",
+      "practice": "能量回收",
+      "years": [
+        2025
+      ],
+      "role": "implemented",
+      "status": "text_claimed",
+      "project": "汀湾-蒸汽回收",
+      "segments": [
+        {
+          "seg_id": "T5-1-2",
+          "text": "汀湾工厂已有可查的蒸汽回收装置，"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "T5",
+          "seg_id": "T5-1-2",
+          "quote": "汀湾工厂已有可查的蒸汽回收装置，",
+          "kind": "disclosure"
+        }
+      ],
+      "source_links": [],
+      "note": ""
+    },
+    {
+      "claim_id": "C010",
+      "site": "汀湾",
+      "actor": "D",
+      "industry": "材料",
+      "practice": "回用",
+      "years": [
+        2024
+      ],
+      "role": "implemented",
+      "status": "source_pending",
+      "project": "汀湾-回用一号",
+      "segments": [
+        {
+          "seg_id": "T5-1-3",
+          "text": "去年的盘点把它叫作回用一号。"
+        },
+        {
+          "seg_id": "T8-1-1",
+          "text": "汀湾回用一号在二月开始计量。"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "T5",
+          "seg_id": "T5-1-3",
+          "quote": "去年的盘点把它叫作回用一号。",
+          "kind": "disclosure"
+        },
+        {
+          "source_id": "T8",
+          "seg_id": "T8-1-1",
+          "quote": "汀湾回用一号在二月开始计量。",
+          "kind": "disclosure"
+        }
+      ],
+      "source_links": [
+        {
+          "link_id": "L006",
+          "kind": "same_project",
+          "status": "confirmed",
+          "basis": "同一场址（汀湾）对同一项目（回用一号）的多篇发稿，行动只计一次",
+          "left": "T5-1-3",
+          "right": "T8-1-1",
+          "evidence": [],
+          "slots": [
+            "去年的盘点把它叫作=>汀湾",
+            "∅=>在二月开始计量"
+          ]
+        },
+        {
+          "link_id": "L007",
+          "kind": "shared_terms",
+          "status": "proposed",
+          "basis": "共享项目术语（回用一号）但场址不同，无法证实同源，需补录底文或确认段落关系",
+          "left": "T5-1-3",
+          "right": "T9-1-1",
+          "evidence": [],
+          "slots": [
+            "去年的盘点把它叫作=>采用",
+            "∅=>质控登记册"
+          ]
+        },
+        {
+          "link_id": "L008",
+          "kind": "shared_terms",
+          "status": "proposed",
+          "basis": "共享项目术语（回用一号）但场址不同，无法证实同源，需补录底文或确认段落关系",
+          "left": "T8-1-1",
+          "right": "T9-1-1",
+          "evidence": [],
+          "slots": [
+            "汀湾=>采用",
+            "在二月开始计量=>质控登记册"
+          ]
+        }
+      ],
+      "note": "存在未证实同源关系，两种解释见来源图 alternatives"
+    },
+    {
+      "claim_id": "C011",
+      "site": "汀湾",
+      "actor": "D",
+      "industry": "材料",
+      "practice": "能量回收",
+      "years": [
+        2024
+      ],
+      "role": "implemented",
+      "status": "text_claimed",
+      "project": "汀湾-蒸汽",
+      "segments": [
+        {
+          "seg_id": "T8-2-1",
+          "text": "该号当地指蒸汽冷凝回收，"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "T8",
+          "seg_id": "T8-2-1",
+          "quote": "该号当地指蒸汽冷凝回收，",
+          "kind": "disclosure"
+        }
+      ],
+      "source_links": [],
+      "note": ""
+    },
+    {
+      "claim_id": "C012",
+      "site": "长塘",
+      "actor": "E",
+      "industry": "材料",
+      "practice": "回用",
+      "years": [
+        2024
+      ],
+      "role": "intent",
+      "status": "source_pending",
+      "project": "长塘-回用一号",
+      "segments": [
+        {
+          "seg_id": "T9-1-1",
+          "text": "采用回用一号质控登记册，"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "T9",
+          "seg_id": "T9-1-1",
+          "quote": "采用回用一号质控登记册，",
+          "kind": "disclosure"
+        }
+      ],
+      "source_links": [
+        {
+          "link_id": "L007",
+          "kind": "shared_terms",
+          "status": "proposed",
+          "basis": "共享项目术语（回用一号）但场址不同，无法证实同源，需补录底文或确认段落关系",
+          "left": "T5-1-3",
+          "right": "T9-1-1",
+          "evidence": [],
+          "slots": [
+            "去年的盘点把它叫作=>采用",
+            "∅=>质控登记册"
+          ]
+        },
+        {
+          "link_id": "L008",
+          "kind": "shared_terms",
+          "status": "proposed",
+          "basis": "共享项目术语（回用一号）但场址不同，无法证实同源，需补录底文或确认段落关系",
+          "left": "T8-1-1",
+          "right": "T9-1-1",
+          "evidence": [],
+          "slots": [
+            "汀湾=>采用",
+            "在二月开始计量=>质控登记册"
+          ]
+        }
+      ],
+      "note": "存在未证实同源关系，两种解释见来源图 alternatives"
+    },
+    {
+      "claim_id": "C013",
+      "site": "长塘",
+      "actor": "E",
+      "industry": "材料",
+      "practice": "能量回收",
+      "years": [
+        2024
+      ],
+      "role": "implemented",
+      "status": "text_claimed",
+      "project": "长塘-冷凝水回收",
+      "segments": [
+        {
+          "seg_id": "T9-1-2",
+          "text": "长塘化工场已实施冷凝水回收。"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "T9",
+          "seg_id": "T9-1-2",
+          "quote": "长塘化工场已实施冷凝水回收。",
+          "kind": "disclosure"
+        }
+      ],
+      "source_links": [],
+      "note": ""
+    }
+  ],
+  "visits": [
+    {
+      "visit_id": "V1",
+      "date": "2026-04-09",
+      "site": "南站",
+      "person": "林均",
+      "status": "已完成",
+      "decision": "keep",
+      "reason": "已完成采访，保留实际场址与核实范围",
+      "covers": [
+        [
+          "装配",
+          2024,
+          "回用"
+        ],
+        [
+          "装配",
+          2025,
+          "回用"
+        ],
+        [
+          "装配",
+          2025,
+          "巡检"
+        ]
+      ],
+      "claim_ids": [
+        "C001",
+        "C002"
+      ],
+      "verified_claim_ids": [
+        "C001"
+      ],
+      "merged_into": null,
+      "goal": "现场核对青瓦供冷与冷却塔标识。已见到六月运行记录，未见巡检台账。"
+    },
+    {
+      "visit_id": "V2",
+      "date": "2026-04-13",
+      "site": "北站",
+      "person": "岳桥",
+      "status": "已确认",
+      "decision": "keep",
+      "reason": "已确认预约且至少一项独立研究目标仍可核实",
+      "covers": [
+        [
+          "装配",
+          2025,
+          "回用"
+        ],
+        [
+          "装配",
+          2025,
+          "巡检"
+        ]
+      ],
+      "claim_ids": [
+        "C003",
+        "C004"
+      ],
+      "verified_claim_ids": [],
+      "merged_into": null,
+      "goal": "核对巡检是否实做，看看二季度末回收设施是不是南站项目。"
+    },
+    {
+      "visit_id": "V4",
+      "date": "2026-04-13",
+      "site": "长塘",
+      "person": "岳桥",
+      "status": "开放",
+      "decision": "add",
+      "reason": "按最早开放窗口补研究格子 ('材料', 2024, '回用')，同次到访另覆盖 1 个格子",
+      "covers": [
+        [
+          "材料",
+          2024,
+          "回用"
+        ],
+        [
+          "材料",
+          2024,
+          "能量回收"
+        ]
+      ],
+      "claim_ids": [
+        "C012",
+        "C013"
+      ],
+      "verified_claim_ids": [],
+      "merged_into": null,
+      "goal": "设备采购和二〇二四年仪表记录可查。"
+    },
+    {
+      "visit_id": "V5",
+      "date": "2026-04-14",
+      "site": "北站",
+      "person": "岳桥",
+      "status": "开放",
+      "decision": "merge",
+      "reason": "同场址补证并入已有预约 V2，不占其他企业名额",
+      "covers": [],
+      "claim_ids": [],
+      "verified_claim_ids": [],
+      "merged_into": "V2",
+      "goal": "补查换热器采购。"
+    },
+    {
+      "visit_id": "V6",
+      "date": "2026-04-15",
+      "site": "西站",
+      "person": "林均",
+      "status": "开放",
+      "decision": "blocked",
+      "reason": "登记为不可接待",
+      "covers": [],
+      "claim_ids": [],
+      "verified_claim_ids": [],
+      "merged_into": null,
+      "goal": "站长未允许外部访查，值班表暂登记。"
+    }
+  ],
+  "leftovers": [
+    {
+      "visit_id": "V6",
+      "site": "西站",
+      "reason_code": "not_receptive",
+      "detail": "登记为不可接待"
+    },
+    {
+      "visit_id": "V3",
+      "site": "汀湾",
+      "reason_code": "no_window",
+      "detail": "本轮访查次数或集团场址上限已满，无合适窗口"
+    },
+    {
+      "visit_id": null,
+      "site": "汀湾",
+      "reason_code": "no_window",
+      "detail": "独立候选可补 材料/2025/回用，但本轮没有合适窗口"
+    },
+    {
+      "visit_id": null,
+      "site": "汀湾",
+      "reason_code": "no_window",
+      "detail": "独立候选可补 材料/2025/能量回收，但本轮没有合适窗口"
+    }
+  ],
+  "coverage": [
+    {
+      "industry": "装配",
+      "year": 2024,
+      "practice": "回用",
+      "state": "covered",
+      "claim_ids": [
+        "C001"
+      ]
+    },
+    {
+      "industry": "装配",
+      "year": 2024,
+      "practice": "巡检",
+      "state": "empty",
+      "claim_ids": []
+    },
+    {
+      "industry": "装配",
+      "year": 2024,
+      "practice": "能量回收",
+      "state": "empty",
+      "claim_ids": []
+    },
+    {
+      "industry": "装配",
+      "year": 2025,
+      "practice": "回用",
+      "state": "covered",
+      "claim_ids": [
+        "C001",
+        "C003"
+      ]
+    },
+    {
+      "industry": "装配",
+      "year": 2025,
+      "practice": "巡检",
+      "state": "covered",
+      "claim_ids": [
+        "C002",
+        "C004"
+      ]
+    },
+    {
+      "industry": "装配",
+      "year": 2025,
+      "practice": "能量回收",
+      "state": "empty",
+      "claim_ids": []
+    },
+    {
+      "industry": "材料",
+      "year": 2024,
+      "practice": "回用",
+      "state": "covered",
+      "claim_ids": [
+        "C010",
+        "C012"
+      ]
+    },
+    {
+      "industry": "材料",
+      "year": 2024,
+      "practice": "巡检",
+      "state": "empty",
+      "claim_ids": []
+    },
+    {
+      "industry": "材料",
+      "year": 2024,
+      "practice": "能量回收",
+      "state": "covered",
+      "claim_ids": [
+        "C011",
+        "C013"
+      ]
+    },
+    {
+      "industry": "材料",
+      "year": 2025,
+      "practice": "回用",
+      "state": "candidate",
+      "claim_ids": [
+        "C008"
+      ]
+    },
+    {
+      "industry": "材料",
+      "year": 2025,
+      "practice": "巡检",
+      "state": "empty",
+      "claim_ids": []
+    },
+    {
+      "industry": "材料",
+      "year": 2025,
+      "practice": "能量回收",
+      "state": "candidate",
+      "claim_ids": [
+        "C009"
+      ]
+    }
+  ],
+  "change_log": []
+}

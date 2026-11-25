@@ -22,3 +22,29 @@ python3 -m corpus
 python3 -m corpus texts --id T2
 python3 -m unittest discover -s tests -v
 ```
+
+## 来源复用与访查选样工具（`sourcing` 包）
+
+仅用标准库，按"先分清文字从哪里来，再安排有限访查"的顺序组织：
+
+- `textmodel`：保留原文切句切段，归一化后计算字符/二元组相似度，对齐出固定文字骨架与被替换的槽位。
+- `provenance`：把段间关系分为范文复用 `template_reuse`、引用 `citation`、同一项目 `same_project`、仅文字照抄 `text_only_reuse`、仅术语共享 `shared_terms`；状态分 `proposed/confirmed/refuted`。同源只在能解释重复内容或同一项目的同类已确认边之间传递，通用范文边不会把两个独立项目连成一家。
+- `claims`：同一段可拆开认定，模板承诺与引用同行不算本场行动，自写措施单独成为候选；状态区分文字所称 `text_claimed`、采访核实 `interview_verified`、现场核实 `site_verified` 与来源待区分 `source_pending`。
+- `visits`：先保已确认/已完成且仍可核实的预约，再按研究格子以最早开放窗口补缺口，遵守每轮三次、同集团两个场址、只安排可接待工厂等约束；同场址补证并入已有预约，不占其他企业名额。
+- `workspace`：接入更早范文或新采访后再规划。已完成访查保留实际场址与所核范围，未出发计划按新证据调整，并记录覆盖缺口变化。
+
+常用命令：
+
+```text
+python3 -m sourcing links                       # 全部句段关系
+python3 -m sourcing links --kind template_reuse # 只看范文复用
+python3 -m sourcing alternatives T9-1-1         # 未证实同源的两种解释
+python3 -m sourcing claims --site 北站           # 某场址行动候选
+python3 -m sourcing plan                        # 访查选样、覆盖与余量
+python3 -m sourcing explain T1-2-1 T2-2-1 --kind same_project
+python3 -m sourcing revise --interview tests/fixtures/new_interview.json
+python3 -m sourcing export -o reports/grouping.json
+```
+
+导出的分组材料可从每个访查对象回溯到互相重复的原段、独立自写内容、来源确认状态，并分清文字所称与采访/现场核实的事实。放不进本轮的候选按"来源待区分 / 同一行动已有覆盖 / 独立但没有合适窗口 / 无法接触"说明原因。
+
